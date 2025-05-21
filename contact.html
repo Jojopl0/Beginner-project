@@ -1,24 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
     <head> 
-        <title>Joseph Sun details</details></title>
+        <title>Joseph Sun details</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="edits.css">
     </head>
     <body class="aboutPage">
+
         <div class="tabs">
-            <a href="intropage.html">Home</a>
-            <a href="contact.html">About</a>
-            <a href="interest.html">Interests</a>
-        </div>
-
-       <div class="">
-
+            <a class="tab" href="intropage.html" >Home</a>
+            <a class="tab active" href="contact.html" class="active">About</a>
+            <a class="tab" href="interest.html">Interests</a>
        </div>
 
+        <div class="contactDetails">
+            <img class = "thePeople" src="images/friend.jpg" alt="Picture of my consulting team">
+            
+            <h2>I am a Cognitive Science Major at Umich who is focused on quality and impact</h2>
 
 
-        
+
+
+
+
+            <div class="Clickables">
+                <div class="contactCard">
+                    <a href="mailto:jossun@umich.edu"><img class="icons" src="images/mail.png" alt="Mail Icon"></a>
+                    <a class="reference" href="mailto:jossun@umich.edu">jossun@umich.edu</a>
+                </div>
+
+                <div class="contactCard">
+                    
+                    <span id="copyPhone" class="copyPhone" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <img class="icons" src="images/telephone.png" alt="telephone Image">
+                        <u>(248)466-4489</u>
+                     </span>
+                     <div id="copyPrompt" style="display:none; color:green; margin: top 20px; font-size: 30px;">
+                         Phone number copied!
+                     </div>
+                </div>
+
+                <div class="contactCard">
+                    <a href="https://www.linkedin.com/in/sunjoseph/" target="_blank" rel="noopener"><img class="icons" src="images/LinkedinIcon.png" alt="LinkedIn Icon"></a>
+                    <a class="reference" href="https://www.linkedin.com/in/sunjoseph/" target="_blank" rel="noopener">My LinkedIn</a>
+                </div>
+
+                <div class="contactCard">
+                    <a href="https://github.com/Jojopl0" target="_blank" rel="noopener"><img class = "icons" src="images/GitHub-logo.png" alt="github logo"></a>
+                    <a class = "reference"href="https://github.com/Jojopl0" target="_blank" rel="noopener">My Github</a>
+                </div>
+
+                <div class="contactCard">
+                    <a href="https://jojopl0.github.io/" target="_blank" rel="noopener"><img class="icons" src="images/domain.png" alt=""></a>
+                    <a class = "reference"href="https://jojopl0.github.io/" target="_blank" rel="noopener">My Website</a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div id="hello-section" class="helloSection">
+            <label for="nameInput">Enter your name:</label>
+            <input type="text" id="nameInput" placeholder="Your name">
+            <button id="sayHelloBtn">Tell me a Joke</button>
+            <p id="helloMessage"></p>
+        </div>
+
+
+
+
+
+
+
+       <footer>
+        <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Gregor Cresnar - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/domain" title="domain icons">Domain icons created by Lizel Arina - Flaticon</a>
+       </footer>
+       
+
+      <script src="contactscript.js"></script>
     </body>
 
 

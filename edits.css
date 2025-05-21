@@ -1,5 +1,5 @@
 .homepage{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -7,10 +7,13 @@
     justify-content: center; 
     align-items: center;    
     text-align: center;
+    background-image: url(images/abstract_pattern_design_background_2007.jpg);
+
 }
+
 
 .aboutPage{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -18,25 +21,125 @@
     justify-content: center; 
     align-items: center;    
     text-align: center;
+    background-image: url(images/abstract_pattern_design_background_2007.jpg);
+    
 }
+
+
+.interestPage {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;
+    background-image: url(images/abstract_pattern_design_background_2007.jpg);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+.restofHome {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;
+    gap: 50px;
+    padding: 50px;
+}
+
 
 .personalBio {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;
     max-width: 60%;
+    font-size: 25px;
 }
+
 
 .tabs {
     background-color: black;
     color: white;
-    text-align: right;
     width: 100%;
     height: 80px;
     text-decoration: none;
-    gap: 20px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    flex-shrink: 1;
+}
+
+
+a.tab {
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.tab:hover,
+.tab:focus {
+    background-color: #5dca36;
+    border-radius: 5px;
+}
+
+.tab.active {
+    background-color: #1d6d86;
+    border-radius: 5px;
+}
+
+
+
+.contactDetails {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contactCard {
+    flex-direction: column;
     display: flex;
     align-items: center;
 }
+
+
+a.reference {
+    color:darkslategrey;
+    font-size: 25px;
+}
+
+.Clickables {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    gap: 0 50px;
+    border: 4px solid black;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.icons {
+    height: 70px;
+}
+
+.copyPhone {
+    color:darkslategrey;
+    font-size: 25px;
+}
+
+
 
 
 .picOfMe {
@@ -44,11 +147,42 @@
     margin-left: auto;
     margin-right: auto;
     height: auto;
+    border: 4px solid black;
+    border-radius: 50px;
 }
 
-.barney {
-    width: 35%;
+
+
+.thePeople {
+    width: 40%;
+    border: 4px solid black;
+    border-radius: 0 0 70px 70px;
 }
 
 
+
+.helloSection {
+    margin: 20px;
+    padding: 50px;
+}
+
+
+.picOfMe:hover {
+    animation: jumpAround 0.7s cubic-bezier(.36,.07,.19,.97) both;
+  }
+
+
+@keyframes jumpAround {
+    0%   { transform: translate(0, 0); }
+    10%  { transform: translate(-10px, -15px); }
+    20%  { transform: translate(12px, -8px); }
+    30%  { transform: translate(-7px, 10px); }
+    40%  { transform: translate(14px, 6px); }
+    50%  { transform: translate(-12px, 10px); }
+    60%  { transform: translate(8px, -12px); }
+    70%  { transform: translate(-14px, -6px); }
+    80%  { transform: translate(10px, 14px); }
+    90%  { transform: translate(-8px, -10px); }
+    100% { transform: translate(0, 0); }
+  }
 

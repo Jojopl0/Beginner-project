@@ -1,0 +1,228 @@
+#backToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 100;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  
+  #backToTop.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+.RLHidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(200%);
+    transition: all 2s;
+    
+}
+
+.RLShow {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.LRHidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-200%);
+    transition: all 2s;
+}
+
+.LRIHidden {
+    width: 20%;
+    border-radius: 15px;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.LRIShow {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+.RLIHidden {
+    border-radius: 15px;
+    width: 20%;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.RLIShow {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+.UDHidden {
+    border-radius: 15px;
+    width: 100%;
+    opacity: 1;
+    filter: blur(5px);
+    transform: translateY(-80%);
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.UDShow {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+
+.DUHidden {
+    border-radius: 15px;
+    width: 100%;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(80%);
+    transition: all 1s;
+}
+
+.DUShow {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+
+
+
+.LRShow {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+
+
+.LLRIHidden {
+    width: 100%;
+    border-radius: 15px;
+    opacity: 1;
+    filter: blur(5px);
+    transform: translateX(-80%);
+    transition: all 1s;
+}
+
+.LLRIShow {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+.RRLIHidden {
+    border-radius: 15px;
+    width: 100%;
+    opacity: 1;
+    filter: blur(5px);
+    transform: translateX(80%);
+    transition: all 1s;
+}
+
+.RRLIShow {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+
+
+
+
+
+
+
+.sidesOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    gap: .5rem;
+    margin-top: 60vw;
+}
+
+.sides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    gap: .5rem;
+    width: 100vw;
+}
+
+
+.headingImage {
+    width: 80%;
+    overflow: hidden;
+    align-items: center;
+    object-fit: cover; 
+    display: block;
+}
+
+.sides img:nth-child(1) {
+ transition-delay: 0ms;
+}
+.sides img:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.sides img:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.spacer {
+    margin: 50px;
+}
+
+.gridPics {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    gap: 5px; 
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+
+
+
+
+
+@media(prefers-reduced-motion) {
+    .RLHidden {
+        transition: none;
+    }
+    .LRHidden {
+        transition: none;
+    }
+}
+
+
