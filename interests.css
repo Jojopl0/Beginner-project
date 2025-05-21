@@ -198,6 +198,10 @@
     transition-delay: 400ms;
 }
 
+.sides img:nth-child(4) {
+    transition-delay: 600ms;
+}
+
 .spacer {
     margin: 50px;
 }
